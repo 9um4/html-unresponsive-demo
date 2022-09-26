@@ -1,23 +1,91 @@
-/* Initialize */
+/* CSS 간이 초기화 */
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
+  font-size: 10px;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    border: 0;
+  border: 0;
+}
+
+/* Header */
+.header {
+  max-width: 960px;
+  min-width: 500px;
+
+  /* container layout */
+  margin: 0 auto;
+
+  /* item layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-container {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nav-group-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* title */
+.title {
+  font-size: 2.3rem;
+}
+
+.subtitle {
+  font-size: 1.7rem;
+}
+
+/* global navigator */
+.list {
+  font-size: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-item {
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: 2px 5px;
+}
+
+/* 영역 가시화용 코드 (추후 삭제) */
+.header {
+  background-color: greenyellow;
+}
+
+.title {
+  background-color: yellow;
+}
+
+.subtitle {
+  background-color: aliceblue;;
 }
