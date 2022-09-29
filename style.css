@@ -26,8 +26,10 @@ img {
 
 /* Header */
 .header {
-  max-width: 960px;
+  /* header sizing */
+  max-width: 1500px;
   min-width: 500px;
+  height: 150px;
 
   /* container layout */
   margin: 0 auto;
@@ -39,42 +41,48 @@ img {
 }
 
 .title-container {
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-left: 10px;
+  height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .nav-group-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width : 50%;
+  height: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 /* title */
 .title {
-  font-size: 2.3rem;
+  font-size: 1.7rem;
 }
 
 .subtitle {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 /* global navigator */
 .list {
   font-size: 0;
-  display: flex;
-  justify-content: space-around;
 }
 
 .list-item {
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: inline-block;
-  padding: 2px 5px;
+  padding: 2px 10px;
+}
+
+.list-item > a {
+  color: black;
+}
+
+.list-item > a:hover {
+  color: gray;
 }
 
 /* 영역 가시화용 코드 (추후 삭제) */
