@@ -85,6 +85,55 @@ img {
   color: gray;
 }
 
+/* main container */
+.main-container {
+  /* header sizing */
+  max-width: 1500px;
+  min-width: 500px;
+  
+  /* container layout */
+  margin: 10px auto 0px;
+
+  /* content layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-container {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.article-container {
+  margin-bottom: 10px;
+}
+
+.article-container:last-child {
+  margin-bottom: 0px;
+}
+
+.article-title {
+  font-size: 1.5rem;
+
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.article-desc {
+  font-size: 1rem;
+
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.aside-container {
+  width: 30%;
+}
+
+
 /* 영역 가시화용 코드 (추후 삭제) */
 .header {
   background-color: greenyellow;
@@ -96,4 +145,14 @@ img {
 
 .subtitle {
   background-color: aliceblue;;
+}
+
+.article-container {
+  border-color: black;
+  border : 1px solid black;
+}
+
+.aside-container {
+  border-color: black;
+  border : 1px solid black;
 }
