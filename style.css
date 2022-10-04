@@ -78,9 +78,10 @@ img {
 }
 
 .list-item {
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: inline-block;
   padding: 2px 10px;
+  text-transform: uppercase;
 }
 
 .list-item > a {
@@ -136,9 +137,39 @@ img {
 
 /* aside */
 .aside-container {
+  /* size */
   min-width: 200px;
+
+  /* item layout */
+  display: flex;
+  flex-direction: column;
+  
+  /* border */
+  border-top: 1px solid black;
 }
 
+.aside-tab {
+  /* tab inner layout */
+  padding: 10px;
+
+  border: 1px solid black;
+  border-top: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.aside-tab-content-container {
+  /* tab inner layout */
+  padding-left: 10px;
+}
+
+.aside-tab-content-title {
+  max-width: 125px;
+  /* text ellipsis */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* 영역 가시화용 코드 (추후 삭제) */
 .header-container {
@@ -154,11 +185,6 @@ img {
 }
 
 .article-container {
-  border-color: black;
-  border : 1px solid black;
-}
-
-.aside-container {
   border-color: black;
   border : 1px solid black;
 }
