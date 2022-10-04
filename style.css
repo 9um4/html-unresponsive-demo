@@ -24,11 +24,17 @@ img {
   border: 0;
 }
 
-/* Header */
-.header {
-  /* header sizing */
+/* site default minimum width */
+.header-container,
+.main-container,
+.footer-container {
   max-width: 1500px;
-  min-width: 500px;
+  min-width: 665px;
+}
+
+/* Header */
+.header-container {
+  /* header sizing */
   height: 150px;
 
   /* container layout */
@@ -87,9 +93,6 @@ img {
 
 /* main container */
 .main-container {
-  /* header sizing */
-  max-width: 1500px;
-  min-width: 500px;
   
   /* container layout */
   margin: 10px auto 0px;
@@ -100,14 +103,16 @@ img {
   justify-content: space-between;
 }
 
+/* main content */
 .content-container {
-  width: 70%;
+  margin-right: 10px;
 
   display: flex;
   flex-direction: column;
 }
 
 .article-container {
+  padding: 20px;
   margin-bottom: 10px;
 }
 
@@ -129,13 +134,14 @@ img {
   margin-left: 5px;
 }
 
+/* aside */
 .aside-container {
-  width: 30%;
+  min-width: 200px;
 }
 
 
 /* 영역 가시화용 코드 (추후 삭제) */
-.header {
+.header-container {
   background-color: greenyellow;
 }
 
