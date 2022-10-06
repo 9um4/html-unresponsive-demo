@@ -24,7 +24,12 @@ img {
   border: 0;
 }
 
+/* 가장자리 여백 */
+body {
+  padding: 0 20px;
+}
 
+/* container 기초 정렬 및 설정 */
 .header-container,
 .main-container,
 .footer-container {
